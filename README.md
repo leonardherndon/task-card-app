@@ -1,1 +1,1 @@
-This is my Angular2 Skeleton Project
+This is my Task Card App Project
