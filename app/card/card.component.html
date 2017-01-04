@@ -1,0 +1,13 @@
+<div class="col-sm-3">
+    <div *ngIf="task.alive" class="card" [class.completed]="task.completed">
+        <div class="card-block">
+            <p>{{task.content}}</p>
+        </div>
+        <div class="card-footer">
+            <span *ngIf="!task.completed"><i class="fa fa-square-o" aria-hidden="true" (click)="statusToggle()"></i> Not Complete</span>
+            <span *ngIf="task.completed"><i class="fa fa-check-square-o" aria-hidden="true" (click)="statusToggle()"></i>Completed</span>
+            <br/>
+            <span (click)="removeTask()"><i class="fa fa-times" aria-hidden="true" ></i>Remove</span>
+        </div>
+    </div>
+</div>
